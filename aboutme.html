@@ -2,6 +2,14 @@
 
 <html lang="en">
 <head>
+  <script type="text/javascript">
+        function OnMouseIn (elem) {
+            elem.style.color = "yellow";
+        }
+        function OnMouseOut (elem) {
+            elem.style.color = "";
+        }
+    </script>
   <meta charset="utf-8">
 
   <title>About Me</title>
@@ -11,7 +19,7 @@
 </head>
 <body>
   <img src="melina_bridals-72.jpg" id="bridal">
-  <ul id="about_me_list">
+  <ul id="about_me_list" onmouseover="OnMouseIn (this)" onmouseout="OnMouseOut (this)">
     <li>
       BYU Student
     </li>
